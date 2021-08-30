@@ -19,7 +19,7 @@ const ChatBubble = (props) => {
   const classes = useStyles()
 
   const ConditionalAvatar = () => {
-    if (props.renderAvatar === true) {
+    if (props.renderAvatar) {
       return <Avatar src="https://thispersondoesnotexist.com/image"/>
     } else { return null }
   }
